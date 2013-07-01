@@ -4,5 +4,3 @@
 <% @users.each do |user| %>
   <p><%= link_to user.username + ":" + user.title, user %></p>
 <% end %>
-
-<p>Here is the environment variable that should be visible: <%= ENV['ADMIN_PASS'] %></p>

@@ -8569,3 +8569,249 @@ Served asset /tinymce.js - 304 Not Modified (6ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-30 21:35:18 -0400
 Served asset /application.js - 304 Not Modified (10ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.6ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (219.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "title" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "username" varchar(255), "admin" boolean) 
+  [1m[36m (132.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (152.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (123.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (132.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (131.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130701003523')
+  [1m[36m (133.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130630184859')[0m
+  [1m[35m (132.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130629223306')
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130629223306)
+Migrating to AddUsernameToUsers (20130630184859)
+Migrating to AddAdminToUsers (20130701003523)
+Migrating to AddAdminUser (20130701015829)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'edhalferty@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "users" ("admin", "body", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "title", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["body", nil], ["created_at", Mon, 01 Jul 2013 02:01:07 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "edhalferty@gmail.com"], ["encrypted_password", "$2a$10$t9Gy89WZni/o8O74l8UFQ.gbJTjPDpkCBafTXH6hQYXxlAlNaa2q2"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["title", nil], ["updated_at", Mon, 01 Jul 2013 02:01:07 UTC +00:00], ["username", "admin"]]
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130701015829')
+  [1m[36m (270.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-30 22:01:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (("users"."title" IS NOT NULL AND "users"."body" IS NOT NULL))[0m
+  Rendered users/index.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 104ms (Views: 90.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-30 22:01:16 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-30 22:01:16 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:16 -0400
+Served asset /jquery.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:17 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:17 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:17 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:17 -0400
+Served asset /tinymce.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:17 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3WU4G53mxNW+oE9wGEe39+yUe7yVnBkqTwddryqF7CQ=", "user"=>{"login"=>"admin", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (lower(username) = 'admin' OR lower(email) = 'admin') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-07-01 02:01:23.426379', "current_sign_in_at" = '2013-07-01 02:01:23.426379', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-07-01 02:01:23.428485' WHERE "users"."id" = 1
+  [1m[36m (155.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 319ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (("users"."title" IS NOT NULL AND "users"."body" IS NOT NULL))[0m
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 8.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:23 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-06-30 22:01:25 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3WU4G53mxNW+oE9wGEe39+yUe7yVnBkqTwddryqF7CQ="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-30 22:01:25 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (("users"."title" IS NOT NULL AND "users"."body" IS NOT NULL))[0m
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-30 22:01:26 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-30 22:01:26 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:26 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:26 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:26 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:26 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:26 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:26 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tinymce/themes/modern/theme.js" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /tinymce/themes/modern/theme.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tinymce/plugins/table/plugin.js" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /tinymce/plugins/table/plugin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tinymce/plugins/fullscreen/plugin.js" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /tinymce/plugins/fullscreen/plugin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tinymce/skins/lightgray/skin.min.css" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /tinymce/skins/lightgray/skin.min.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/tinymce/skins/lightgray/content.min.css" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /tinymce/skins/lightgray/content.min.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/tinymce/skins/lightgray/fonts/icomoon.woff" for 127.0.0.1 at 2013-06-30 22:01:27 -0400
+Served asset /tinymce/skins/lightgray/fonts/icomoon.woff - 304 Not Modified (3ms)
