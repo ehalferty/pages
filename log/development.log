@@ -11437,3 +11437,817 @@ Served asset /tinymce/skins/lightgray/skin.min.css - 304 Not Modified (3ms)
 
 Started GET "/assets/tinymce/skins/lightgray/content.min.css" for 127.0.0.1 at 2013-06-30 23:10:21 -0400
 Served asset /tinymce/skins/lightgray/content.min.css - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (("users"."title" IS NOT NULL AND "users"."body" IS NOT NULL))
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 228ms (Views: 121.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Served asset /jquery.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Served asset /tinymce.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:20 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ai7WPhMNnEOZB+aVjAPBDzJnVAlxIhl/fx/RAa1hWjY="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (("users"."title" IS NOT NULL AND "users"."body" IS NOT NULL))
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:23 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (("users"."title" IS NOT NULL AND "users"."body" IS NOT NULL))[0m
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:25 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 9.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Served asset /users.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:27 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-07-01 00:58:41 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t109pzQtiK3HUjkhuvrXwkkuuHmw++MuD1KfNZjnaLU=", "user"=>{"login"=>"admin", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (lower(username) = 'admin' OR lower(email) = 'admin') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = '2013-07-01 04:58:41.660451', "sign_in_count" = 2, "updated_at" = '2013-07-01 04:58:41.671577' WHERE "users"."id" = 1
+  [1m[36m (140.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 316ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-01 00:58:41 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (("users"."title" IS NOT NULL AND "users"."body" IS NOT NULL))[0m
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 8.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:42 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:42 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:42 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:42 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:42 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:42 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:42 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:42 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (("users"."title" IS NOT NULL AND "users"."body" IS NOT NULL))[0m
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 8.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:48 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Processing by UsersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 00:58:50 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Served asset /application.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 01:00:31 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 113ms (Views: 55.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Served asset /jquery.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Served asset /tinymce.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 01:05:55 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 113ms (Views: 55.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Served asset /jquery.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Served asset /tinymce.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:18 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2013-07-01 01:06:19 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/edit.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 63ms (Views: 55.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /tinymce.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tinymce/themes/modern/theme.js" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /tinymce/themes/modern/theme.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/tinymce/plugins/table/plugin.js" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /tinymce/plugins/table/plugin.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/tinymce/plugins/fullscreen/plugin.js" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /tinymce/plugins/fullscreen/plugin.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/tinymce/skins/lightgray/skin.min.css" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /tinymce/skins/lightgray/skin.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tinymce/skins/lightgray/content.min.css" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /tinymce/skins/lightgray/content.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tinymce/skins/lightgray/fonts/icomoon.woff" for 127.0.0.1 at 2013-07-01 01:06:20 -0400
+Served asset /tinymce/skins/lightgray/fonts/icomoon.woff - 304 Not Modified (5ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t109pzQtiK3HUjkhuvrXwkkuuHmw++MuD1KfNZjnaLU=", "user"=>{"title"=>"aasdf", "body"=>"<p>asdf</p>"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "title" = 'aasdf', "body" = '<p>asdf</p>', "updated_at" = '2013-07-01 05:06:25.026733' WHERE "users"."id" = 1[0m
+  [1m[35m (133.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 153ms (ActiveRecord: 134.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:25 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (("users"."title" IS NOT NULL AND "users"."body" IS NOT NULL))[0m
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 21ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:36 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Processing by UsersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:38 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 30ms (Views: 10.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Served asset /tinymce.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:41 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tinymce/themes/modern/theme.js" for 127.0.0.1 at 2013-07-01 01:06:42 -0400
+Served asset /tinymce/themes/modern/theme.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/plugins/table/plugin.js" for 127.0.0.1 at 2013-07-01 01:06:42 -0400
+Served asset /tinymce/plugins/table/plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/plugins/fullscreen/plugin.js" for 127.0.0.1 at 2013-07-01 01:06:42 -0400
+Served asset /tinymce/plugins/fullscreen/plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/skins/lightgray/skin.min.css" for 127.0.0.1 at 2013-07-01 01:06:42 -0400
+Served asset /tinymce/skins/lightgray/skin.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/skins/lightgray/content.min.css" for 127.0.0.1 at 2013-07-01 01:06:42 -0400
+Served asset /tinymce/skins/lightgray/content.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/skins/lightgray/content.min.css" for 127.0.0.1 at 2013-07-01 01:06:44 -0400
+Served asset /tinymce/skins/lightgray/content.min.css - 304 Not Modified (0ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t109pzQtiK3HUjkhuvrXwkkuuHmw++MuD1KfNZjnaLU=", "user"=>{"title"=>"aasdf", "body"=>"<p>asdfd</p>"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "body" = '<p>asdfd</p>', "updated_at" = '2013-07-01 05:06:47.164382' WHERE "users"."id" = 1
+  [1m[36m (153.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 168ms (ActiveRecord: 154.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/preinit.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Served asset /tinymce/preinit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tinymce/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Served asset /tinymce/tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tinymce.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Served asset /tinymce.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 01:06:47 -0400
+Served asset /application.js - 304 Not Modified (2ms)
